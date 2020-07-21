@@ -1,22 +1,15 @@
 <h1>Add a New Team!</h1>
 
-<%= form_for @team do |tf| %>
-  <%= tf.label :name %>
-  <%= tf.text_field :name %><br>
-  <%= tf.label :locality %>
-  <%= tf.text_field :locality%><br>
-  <%= tf.label :established %>
-  <%= tf.number_field :established %><br>
+<%= form_for @team do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %><br>
+  <%= f.label :locality %>
+  <%= f.text_field :locality%><br>
+  <%= f.label :established %>
+  <%= f.number_field :established %><br>
   <h3>Add Superheroes!</h3>
-  <%= tf.fields_for :superheros do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %><br>
-    <%= f.label :alias %>
-    <%= f.text_field :alias %><br>
-    <%= f.label :power %>
-    <%= f.text_field :power %><br>
-    <%= f.label :power_level %>
-    <%= f.number_field :power_level %><br><br>
+  <%= f.fields_for :superheros do |sf| %>
+    <%= render partial:"superheros/form", locals:{f: sf}%>
   <% end %>
-  <%=tf.submit%>
+  <%=f.submit%>
 <% end %>

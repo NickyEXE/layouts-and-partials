@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KAMALA'S SUPERTEAM SUPERTRACKER</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>Welcome to KAMALA KHAN'S TEAM TRACKER</h1>
+    <h2>The MOST up-to-date superteam tracker to ever come out of Jersey City!</h2>
+    <%= yield %>
+    <%= link_to "View All Teams", teams_path %> | <%= link_to "Add A Teama", new_team_path %> | <%= link_to "Go To My Superhero Tracker", superheros_path %>
+  </body>
+</html>

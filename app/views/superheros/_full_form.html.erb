@@ -1,0 +1,5 @@
+<%= form_for superhero do |f| %>
+  <%= render partial:'form', locals: {superhero: superhero, f: f} %>
+  <%= f.collection_select :team_id, Team.all, :id, :name %>
+<%= f.submit %>
+<% end %>

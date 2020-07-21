@@ -1,12 +1,13 @@
 class TeamsController < ApplicationController
   before_action :set_team, only: [:show]
+  layout 'team'
 
   def index
     @teams = Team.all
   end
 
   def show
-
+    @superhero = Superhero.new
   end
 
   def new

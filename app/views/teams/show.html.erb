@@ -9,3 +9,10 @@
     </div>
   <% end %>
 <% end %>
+
+<h3>Add A Team Member!</h3>
+<%= form_for @superhero do |f| %>
+<%= render partial:"superheros/form", locals: {superhero: @superhero, f: f} %>
+<%= f.hidden_field :team_id, value: @team.id%>
+<%= f.submit %>
+<% end %>

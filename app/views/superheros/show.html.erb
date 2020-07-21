@@ -1,4 +1,4 @@
-<% render partial: "superhero", locals: {superhero: @superhero}%>
+<%= render partial: "superheros/superhero", locals: {superhero: @superhero}%>
 <% if @superhero.team %>
 <p>Team: <%= @superhero.team.name %></p>
 <% end %>
