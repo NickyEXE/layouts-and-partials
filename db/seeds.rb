@@ -8,7 +8,7 @@
 
 Superhero.create(name: "America Chavez", alias: "Miss America", power: "Punching through dimensions", power_level: 7)
 Superhero.create(name: "Doreen Green", alias: "Squirrel Girl", power: "Eating Nuts and Kicking Butts", power_level: 10)
-Superhero.create(name: "Invisible Woman", alias: "Sue Storm", power: "Invisibility, energy fields", power_level: 7)
+Superhero.create(name: "Sue Storm", alias: "Invisible Woman", power: "Invisibility, energy fields", power_level: 7)
 Superhero.create(name: "Loki", alias: "Loki", power: "Tricksiness", power_level: 8)
 Superhero.create(name: "Billy Kaplan", alias: "Wiccan", power: "Can literally just change the universe with a thought.", power_level: 10)
 Superhero.create(name: "Dorrek VIII", alias: "Hulkling", power: "Shapeshifter, not being the hulk but being mistaken for him because he's green.", power_level: 4)

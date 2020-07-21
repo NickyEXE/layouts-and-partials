@@ -6,6 +6,8 @@
   <%= f.label :power %>
   <%= f.text_field :power %><br>
   <%= f.label :power_level %>
-  <%= f.number_field :power_level %><br><br>
+  <%= f.number_field :power_level %><br>
+  <%= f.label :team_id %>
+  <%= f.collection_select :team_id, Team.all, :id, :name %><br><br>
   <%= f.submit %>
 <% end %>
