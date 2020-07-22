@@ -1,7 +1,7 @@
-<h1><%= @superhero.name %></h1>
-<h2>A.K.A. <%= @superhero.alias %></h2>
-<p>Power: <%= @superhero.power %></p>
-<p>Power Level: <%= "💪" * @superhero.power_level %></p>
+<%= render partial:'superhero', locals: {superhero: @superhero} %>
+<% if @superhero.team %>
+<p>Team: <%= @superhero.team.name %></p>
+<% end %>
 
 <%= button_to "Edit #{@superhero.name}", edit_superhero_path, method: :get %>
 <%= button_to "Delete #{@superhero.name}", superhero_path, method: :delete %>

@@ -10,6 +10,7 @@ class SuperherosController < ApplicationController
 
   def new
     @superhero = Superhero.new
+
   end
 
   def create

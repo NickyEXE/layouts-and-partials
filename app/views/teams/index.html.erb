@@ -1,0 +1,5 @@
+<h3>Here's all the teams I'm keeping track of!</h3>
+
+<ul><% @teams.each do |team| %>
+  <li><%= link_to team.name, team %></li>
+<% end %></ul>

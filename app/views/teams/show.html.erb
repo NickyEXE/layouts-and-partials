@@ -1,0 +1,10 @@
+<h3><%= @team.name + " (#{@team.established})" %></h3>
+<p><%= @team.locality %></p>
+
+<% @team.superheros.each do |superhero| %>
+  <%= link_to superhero do %>
+    <div class="superhero-card">
+      <%= render partial:'superheros/superhero', locals:{superhero: superhero} %>
+    </div>
+  <% end %>
+<% end %>

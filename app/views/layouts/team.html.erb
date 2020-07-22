@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KAMALA'S TEAM TRACKER</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>FOR THE JOB SEARCH: POTENTIAL TEAMS</h1>
+    <%= yield %>
+    <%= link_to "Go To My Superheroes Website", superheros_path %> | <%= link_to "See All Teams", teams_path %> | <%= link_to "Add A Team", new_team_path %>
+  </body>
+</html>
